@@ -1,0 +1,37 @@
+{
+  "name": "@sasikumar_zuko/public_components",
+  "version": "1.0.0",
+  "description": "Contains multiple components, refer README",
+  "homepage": "https://github.com/Sasikumar1112/public_components#readme",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/Sasikumar1112/public_components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sasikumar1112/public_components.git"
+  },
+  "license": "ISC",
+  "author": "sasikumar_zuko <sasikumarstu@gamil.com>",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev": "vite",
+    "prettyit": "prettier . --write"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9"
+  }
+}
