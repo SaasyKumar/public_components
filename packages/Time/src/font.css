@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Zuko";
+    src:
+      local("Zuko"),
+      url("./assets/fonts/icomoon.svg") format("svg"),
+      url("./assets/fonts/icomoon.ttf") format("truetype"),
+      url("./assets/fonts/icomoon.woff") format("woff");
+  }
+  

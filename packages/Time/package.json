@@ -1,0 +1,12 @@
+{
+  "name": "timerkit",
+  "version": "1.0.3",
+  "description": "Time Components",
+  "license": "ISC",
+  "author": "sasikumar_zuko <sasikumarstu@gamil.com>",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
