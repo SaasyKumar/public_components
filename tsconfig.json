@@ -9,10 +9,10 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "baseUrl": "src"
+    "baseUrl": "packages/keyutils/src"
   },
   "include": [
-    "src",
+    "packages/keyutils/src",
     "packages/buttons/components/toggle.tsx",
     "packages/Time/src/components"
   ]

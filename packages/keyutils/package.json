@@ -1,7 +1,7 @@
 {
-  "name": "timezkit",
+  "name": "keyutils",
   "version": "1.0.1",
-  "description": "Time based components",
+  "description": "KeyBoard Utils",
   "license": "ISC",
   "author": "sasikumar_zuko <sasikumarstu@gamil.com>",
   "type": "commonjs",
@@ -10,4 +10,3 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
-

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../style/toggle.module.css";
-import KeyboardEventUtils from "../../../../src/utils/keyEvent";
+import {KeyboardEventUtils} from "keyutils";
 function Toggle(props: { content: string; onToggle: Function }) {
   let [isChecked, setCheckedState] = useState(false);
   function handleToggle() {
