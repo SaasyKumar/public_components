@@ -1,9 +1,10 @@
 {
   "name": "keyutils",
-  "version": "1.0.1",
-  "description": "KeyBoard Utils",
+  "version": "1.0.5",
+  "description": "KeyBoard Key Event Utils",
   "license": "ISC",
   "author": "sasikumar_zuko <sasikumarstu@gamil.com>",
+  "keywords": ["keyboard", "keyevent", "utils", "javascript","react","typescript"],
   "type": "commonjs",
   "main": "index.ts",
   "scripts": {
