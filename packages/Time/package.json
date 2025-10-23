@@ -2,8 +2,8 @@
   "name": "timezkit",
   "version": "1.0.1",
   "description": "Time based components",
-  "license": "ISC",
-  "author": "sasikumar_zuko <sasikumarstu@gamil.com>",
+  "license": "MIT",
+  "author": "sassykumar <sasikumarstu@gamil.com>",
   "type": "commonjs",
   "main": "index.ts",
   "scripts": {

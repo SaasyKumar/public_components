@@ -1,7 +1,11 @@
 <h1 align="center">Keyboard Event Utils ⌨️</h1>
-<img src="https://img.shields.io/badge/Keyboard%20Event%20Utils-v1.0.5-blue" alt="Version">
-<img src="https://img.shields.io/badge/Build-Passing-brightgreen" alt="Build Status">
-<br>
+<p align="center">
+<img src="https://img.shields.io/npm/v/key-event-utils?label=key-event-utils" alt="version">
+<!-- <img src="https://img.shields.io/npm/dt/key-event-utils" alt="Downloads"> -->
+<img src="https://img.shields.io/npm/l/key-event-utils" alt="License">
+<img src="https://img.shields.io/badge/TypeScript-Ready-blue?logo=typescript" alt="typeScript">
+</p>
+
 `KeyboardEventUtils` is a utility module for handling keyboard events in React applications. It provides helper functions to check for specific key presses, optionally with modifier keys (e.g., `Ctrl`, `Alt`, `Shift`, `Meta`) and by default strict check for the key.
 
 ## Features
@@ -10,10 +14,15 @@
 - Supports checking for modifier keys (`Ctrl`, `Alt`, `Shift`, `Meta`/`Cmd`).
 - Simplifies keyboard event handling in React components.
 
+### Installing
+
+```sh
+  npm i key-event-utils
+```
 ### Importing the Utility
 
 ```typescript
-import {KeyboardEventUtils} from 'keyutils';
+import {KeyboardEventUtils} from 'key-event-utils';
 ```
 
 ## Usage
@@ -37,6 +46,18 @@ You can specify modifiers as a string; Case doesn’t matter `ctrl`, `Ctrl` or `
 - `shift`
 - `meta` or `cmd`, mentioning one modifier itself will work, no need for OS specific.
 
+Some methods can also used for strict check for modifiers
+```tsx
+  function handleKeyDown(event: React.KeyboardEvent) {
+    if ( ( event.key === "v" || event.key === "v" ) && KeyboardEventUtils.isCtrlKeyPressed(event)) {
+      console.log("Ctrl + V");
+    }
+    if ( ( event.key === "v" || event.key === "v" ) && KeyboardEventUtils.isCtrlKeyPressed(event,"ctrl + shift") ) {
+      console.log("Ctrl + V");
+    }
+  }
+```
+
 ## Keys Supported
 
 The following keys are supported and its corresponding methods:
@@ -47,5 +68,11 @@ The following keys are supported and its corresponding methods:
 - `Delete` - `isDeleteKey`
 - Arrow keys: `ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight` - `isUpArrowKey` ... got the pattern right?
 
+The following methods are used for strict checks for modifiers:
+- Shift - `isShiftKey`
+- Ctrl - `isCtrlKey`
+- Alt - `isAltKey`
+- Cmd or Meta - `isCmdKey` or `isMetaKey`
+
 ## Maintainer
-* [Sasikumar](https://github.com/Sasikumar1112)
+* [Sasikumar](https://github.com/SaasyKumar)

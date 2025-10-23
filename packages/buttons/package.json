@@ -1,9 +1,9 @@
 {
   "name": "tapkit",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Buttons",
-  "license": "ISC",
-  "author": "sasikumar_zuko <sasikumarstu@gamil.com>",
+  "license": "MIT",
+  "author": "sassykumar <sasikumarstu@gamil.com>",
   "type": "module",
   "main": "index.ts",
   "scripts": {

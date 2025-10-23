@@ -1,24 +1,18 @@
-# Learning
+# Overview
+This repository is structured as a **monorepo** to manage a collection of independent, versioned **npm packages**. It centralizes the development of shared code, primarily consisting of:
 
-1. If **input component** is needed, it should have a input and label.
-   - So that it will be automatically support a11y
-   - clicking on any part of label will trigger that
-   - importantly while using forms it will be useful
-   - reworking toggle util.
-2. Use checked attribute selector when the state is just one rather than string concat to add class.
-3. using modules so that components class name don't collide with parent. So write class name with `_` separate not `-`.
+* **TypeScript Utility Functions** (for general logic, data manipulation, etc.)
+* **Reusable React TypeScript Components** (`.tsx` files for UI elements)
 
-# Vocabulary
+The monorepo uses **TypeScript** exclusively to ensure type safety across all consumers.
 
-1. Set1
-   - handle
-   - Util
-   - set
-   - reset
-2. Set 2
-   - is -> when boolean
-   - **Validate**
 
-- use camel case instead of `timeInMilliseconds` instead of `time_in_`
-- `npm init` creats package json
-- `npm publish --access public` publish package
+# 📦 Packages
+
+All packages are published to [**npmjs**](https://www.npmjs.com/settings/saasykumar/packages).
+
+| Package | Description | Status |
+| :--- | :--- | :--- |
+| [**`key-event-utils`**](https://www.npmjs.com/package/key-event-utils) | Utility module for handling keyboard events in React applications. It provides helper functions to check for specific key presses, optionally with modifier keys (e.g., Ctrl, Alt, Shift, Meta) | Stable |
+
+---
